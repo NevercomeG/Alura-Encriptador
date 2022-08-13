@@ -14,4 +14,8 @@ function Encryptor() {
     )
 }
 
-export default Encryptor
+function Dencryptor(){
+
+}
+
+export default Encryptor; Dencryptor
