@@ -5,6 +5,8 @@ import axios from "axios";
 
 import TodoList from "./components/TodoList"
 import TodoForm from "./components/TodoForm";
+import Header from "./components/Header/Header";
+import Encryptor from "./components/Encryptor/Encryptor"
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -20,6 +22,12 @@ function App() {
 
   return (
     <div>
+      <Container>
+
+      <Header/>
+
+      </Container>
+      
       <Navbar bg="light" style={{ marginBottom: "20px" }}>
         <Container>
           <Navbar.Brand href="#">
@@ -30,6 +38,10 @@ function App() {
       <Container>
         <TodoForm todos={todos} setTodos={setTodos} />
         <TodoList todos={todos} setTodos={setTodos} />
+      </Container>
+    
+      <Container>
+          <Encryptor/>
       </Container>
     </div>
   );

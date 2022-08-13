@@ -1,0 +1,19 @@
+.Encryptor{
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+
+}
+
+.Encryptor2{
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    width: 500px;
+
+}
+
+#main{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
