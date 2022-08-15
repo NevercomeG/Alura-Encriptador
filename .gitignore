@@ -1,5 +1,6 @@
 # created by virtualenv automatically
 frontend/node_modules
+node_modules
 env
 
 # Byte-compiled / optimized / DLL files
