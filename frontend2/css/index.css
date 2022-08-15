@@ -70,21 +70,3 @@ footer{
     padding: 20px;
     flex-direction: column;
 }
-
-.text-center { text-align: center }
-
-@media (min-width: 640px) {
-  .sm\:text-center { text-align: center }
-}
-
-@media (min-width: 768) {
-  .md\:text-center { text-align: center }
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-center { text-align: center }
-
-}
-@media (min-width: 1280px) {
-    .xl\:text-center { text-align: center }
-  }
