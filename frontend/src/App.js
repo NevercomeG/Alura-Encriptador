@@ -43,7 +43,10 @@ function App() {
     
       <Container>
           <Encryptor/>
+
       </Container>
+
+
     </div>
   );
 }
