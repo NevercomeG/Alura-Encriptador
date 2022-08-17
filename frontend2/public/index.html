@@ -4,73 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NevercomeG by Encriptor</title>
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    
 </head>
-
-    <all class="grid md:grid-cols-3">
+<body class ="bg-cyan-400 w-screen overflow-x-hidden ">
         <header>
-            <section  class="md:col-span-1 bg-white md:flex md:justify-end">
-                <nav class="text-right">
-                    <div>
-                        <h2>
+            <section>
+                <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+                    <div class="flex justify-between items-center ">
                             <a href="">
-                                <span class="text-sm md:text-xl text-red-900">Encriptor</span></a>
-                        </h2>
+                                <span class="text-2xl font-[Poppins] cursor-pointer">
+                                    <img class="h-8 inline" src="./img/encryption.png" alt="">
+                                    Encriptor 
+                                </span></a>
+                                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                                    </span>
+                                </div>
+
                     </div>
-                    <ul class>
-                        <li class="text-gray-700">
-                            <a href="">
-                                <span>Home<i class="fa-solid fa-house"></i></span>
-                                
+                    <ul class="md:flex mditems-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="https://www.linkedin.com/in/luis-solano-a20683208/" target="_blank" class="text-xl hover:text-cyan-500 duration-500">
+                                <span>Linkedin <i class="fa-brands fa-linkedin"></i></span>
                             </a>
                         </li>
-                        <li class="text-gray-700">
-                            <a href="">
-                                <span>About<i class="fa-solid fa-address-card"></i></i></span>
-                            </a>
-                        </li>
-                        <li class="text-gray-700">
-                            <a href="">
-                                <span>Github<i class="fa-brands fa-github"></i></span>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="https://github.com/NevercomeG" target="_blank" class="text-xl hover:text-cyan-500 duration-500">
+                                <span>Github <i class="fa-brands fa-github"></i></span>
                             </a>
                         </li>
                     </ul>
                 </nav>
             </section> 
         </header>
+
         
-    <main class="px-16 py-6 grid lg:grid-cols-2 md:col-span-2 bg-gray-300">
+
         
-        <section class="text-gray-700 px-4 py-2 m-2 text-center" >
+    <main class="px-32 py-56 grid lg:grid-cols-2 md:col-span-2 bg-gray-300">
+        
+        <section class="text-gray-700 px-4 py-2 m-2 text-center " >
             <form>
+
                 <div class="mb-4 w-full bg-gray-50 rounded-lg border border-gray-500 dark:bg-gray-700 dark:border-gray-600">
                     <span class="text-gray-700  font-bold mg">Encriptor</span>
                     <div class="py-2 px-4 bg-white rounded-t-lg dark:bg-gray-800">
-                        <label for="comment" class="sr-only">Your comment</label>
-                        <textarea id="textodescriptado" rows="7" class="px-0 w-full text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write a comment..." required></textarea>
+                        <textarea id="textodescriptado" rows="7" class="px-0 w-full text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Mensaje Encriptado" required></textarea>
                     </div>
                     <div class="flex justify-between items-center py-2 px-3 border-t dark:border-gray-600">
-                        <button id="encriptar" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</button>
-                        <div class="flex pl-0 space-x-1 sm:pl-2">
-                        <button type="button" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Attach file</span>
-                            </button>
-                            <button type="button" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Set location</span>
-                            </button>
-                            <button type="button" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Upload image</span>
-                            </button>
-                        </div>
+                        <button id="encriptar" type="button" class=" py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Encriptar <i class="fa-solid fa-lock"></i></button>
+                        <button id="test" type="button" class=" py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Auto llenado </button>
                     </div>
                 </div>
              </form>
+
              
              
         </section>
@@ -79,43 +73,25 @@
                 <div class="mb-4 w-full bg-gray-50 rounded-lg border border-gray-500 dark:bg-gray-700 dark:border-gray-600">
                     <span class="text-gray-700 font-bold">Dencriptor</span>
                     <div class="py-2 px-4 bg-white rounded-t-lg dark:bg-gray-800">
-                        <label for="comment" class="sr-only">Your comment</label>
-                        <textarea id="textoencriptado" rows="7" class="px-0 w-full text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write a comment..." required></textarea>
+                        <textarea id="textoencriptado" rows="7" class="px-0 w-full text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Mensaje Desencriptado" required></textarea>
                     </div>
                     <div class="flex justify-between items-center py-2 px-3 border-t dark:border-gray-600">
-                    <!-- botton -->    <button id="desencriptar" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</button>
-                        <div class="flex pl-0 space-x-1 sm:pl-2">
-                            <button type="button" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Attach file</span>
-                            </button>
-                            <button type="button" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Set location</span>
-                            </button>
-                            <button type="button" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Upload image</span>
-                            </button>
-                        </div>
-                    </div>
+                    <button id="desencriptar" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Desencriptar <i class="fa-solid fa-unlock-keyhole"></i></button>
+                    <button id="test2" type="button" class=" py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Auto llenado</button>    
+                </div>
                 </div>
              </form>
-             
-             
         </section>
     </main>
 
 
-    <footer>
-        <section id="footer-upper">
+<footer class="py-12 grid grid-cols-1 md:grid-cols-12 bg-gradient-to-r from-blue-500 to-blue-500 ">
+    <div class="font-bold md:col-span-12 text-center text-gray-200  text-2xl ">
+      Copyright &copy; <a href="">NevercomeG</a>
+    </div>
+  </footer>
 
-        </section>
-        <section id="footer-bottom">
-            
-        </section>
-    </footer>
-
+</body>
     <script src="/frontend2/src/index.js"></script>
     <script src="https://kit.fontawesome.com/0ca7fd1973.js" crossorigin="anonymous"></script>
     <script>
@@ -123,6 +99,16 @@
         btn.onclick = encriptar;
         var btn2 = document.querySelector("#desencriptar");
         btn2.onclick = desencriptar;
+        var test = document.querySelector("#test");
+        test.onclick = rapidtestencriptar;
+        var test = document.querySelector("#test2");
+        test.onclick = rapidtestdesencriptar;
+
+            function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+        
     </script>
 </body>
 </html>
