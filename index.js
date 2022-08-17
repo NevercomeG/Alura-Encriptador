@@ -26,6 +26,8 @@ function rapidtestencriptar(){
 }
 
 function rapidtestdesencriptar(){
-
-    document.querySelector("#textoencriptado").value  = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta obcaecati sapiente animi soluta! Placeat, eveniet, dolorum id pariatur sed explicabo repellat expedita nihil aperiam, soluta vitae quia obcaecati omnis accusamus?";
+    var texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta obcaecati sapiente animi soluta! Placeat, eveniet, dolorum id pariatur sed explicabo repellat expedita nihil aperiam, soluta vitae quia obcaecati omnis accusamus?"
+    var textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+    document.querySelector("#textoencriptado").value  = textoCifrado;
+    
 }
